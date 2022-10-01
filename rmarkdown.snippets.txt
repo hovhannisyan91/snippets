@@ -1,0 +1,85 @@
+snippet [
+	[${1:label}](${2:location})
+
+snippet ![
+	![${1:label}](${2:location})
+
+snippet r
+	```{r ${1:label}, ${2:options}}
+	${0}
+	```
+
+snippet rcpp
+	```{r, engine='Rcpp'}
+	#include <Rcpp.h>
+	using namespace Rcpp;
+	
+	${0}
+	
+	```
+
+snippet pic
+
+	```{r echo=FALSE}
+	include_graphics('${1:Path}')
+	${0}
+	```
+
+
+snippet 2col
+
+	::: columns
+	::: column
+			
+		${0:columns1}
+		
+	:::
+	
+	::: column
+		${0:columns2}
+	:::
+	:::
+	
+	
+snippet onslide
+	\onslide<${1}>{${2}}
+	
+	
+snippet color
+	\textcolor{${1}}{${2}}
+	
+	
+snippet py
+
+	```{python,  echo=TRUE, eval=TRUE, comment=""}
+
+	${0}
+	```
+	
+snippet bold
+	\textbf<${1:1}>{${2}}
+	
+snippet frac
+	\frac{${1-}}{${2}}
+	
+	
+snippet error
+
+	\definecolor{shadecolor}{RGB}{243,222,222}
+	```{r echo=TRUE, eval=TRUE}
+	${0}	
+	```
+	
+snippet warning
+
+	\definecolor{shadecolor}{RGB}{252,248,226}
+	```{r echo=TRUE, eval=TRUE}
+	${0}	
+	```
+	
+snippet success
+
+	\definecolor{shadecolor}{RGB}{223,240,215}
+	```{r echo=TRUE, eval=TRUE}
+	${0}	
+	```	
